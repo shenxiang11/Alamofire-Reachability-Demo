@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import Combine
+
+var store = Store()
 
 @main
 struct Alamofire_Reachability_DemoApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(store)
+                .onAppear(perform: {
+                    NetworkReachability.shared.startNewtworkMonitoring()
+                })
         }
     }
 }
