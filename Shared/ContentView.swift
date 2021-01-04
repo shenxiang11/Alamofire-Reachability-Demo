@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         HStack {
             Image(systemName: state.networkReachable ? "wifi" : "wifi.slash")
-            Text(state.networkReachable ? "网络已连接" : "网络已断开")
+            Text(state.networkType)
         }
             .padding()
     }

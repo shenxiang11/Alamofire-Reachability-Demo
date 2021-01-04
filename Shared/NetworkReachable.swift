@@ -25,13 +25,23 @@ class NetworkReachability {
         reachabilityManager?.startListening { status in
             switch status {
             case .unknown:
-                print("未知的网络状态")
+                store.networkReachable = false
+                store.networkType = "未知"
             case .notReachable:
-                self.onNotReachable()
-            case .reachable(_):
-                self.onReachable()
+                store.networkReachable = false
+                store.networkType = "无网络"
+            case .reachable(.cellular):
+                store.networkReachable = true
+                store.networkType = "蜂窝网络"
+            case .reachable(.ethernetOrWiFi):
+                store.networkReachable = true
+                store.networkType = "以太网或WiFi"
             }
         }
+    }
+    
+    func stopNetworkMonitoring() {
+        reachabilityManager?.stopListening()
     }
 
 }

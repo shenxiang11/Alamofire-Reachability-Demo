@@ -20,6 +20,10 @@ struct Alamofire_Reachability_DemoApp: App {
                 .onAppear(perform: {
                     NetworkReachability.shared.startNewtworkMonitoring()
                 })
+                .onDisappear(perform: {
+                    NetworkReachability.shared.stopNetworkMonitoring()
+                })
+                .frame(minWidth: 200, minHeight: 200)
         }
     }
 }

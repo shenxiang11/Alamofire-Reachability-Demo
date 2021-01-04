@@ -9,4 +9,5 @@ import Combine
 
 final class Store: ObservableObject {
     @Published var networkReachable: Bool = false
+    @Published var networkType: String = ""
 }
