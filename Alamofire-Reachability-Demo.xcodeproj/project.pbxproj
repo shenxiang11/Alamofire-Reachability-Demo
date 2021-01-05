@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BB33F1B25A3F7E1007B1530 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6BD8AC78259C76D700360F63 /* Alamofire_Reachability_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire_Reachability_DemoApp.swift; sourceTree = "<group>"; };
 		6BD8AC79259C76D700360F63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BD8AC7A259C76D800360F63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		6BD8AC72259C76D700360F63 = {
 			isa = PBXGroup;
 			children = (
+				6BB33F1B25A3F7E1007B1530 /* README.md */,
 				6BD8AC77259C76D700360F63 /* Shared */,
 				6BD8AC81259C76D800360F63 /* iOS */,
 				6BD8AC88259C76D800360F63 /* macOS */,

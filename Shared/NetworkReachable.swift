@@ -11,14 +11,6 @@ import Alamofire
 class NetworkReachability {
     static let shared = NetworkReachability()
     
-    func onNotReachable() {
-        store.networkReachable = false
-    }
-    
-    func onReachable() {
-        store.networkReachable = true
-    }
-    
     lazy var reachabilityManager = NetworkReachabilityManager(host:  "www.taobao.com")
     
     func startNewtworkMonitoring() {
